@@ -1,5 +1,9 @@
 function sum(a, b) {
-  return a + b;
+  try {
+    return a + b;
+  } catch (e) {
+    return 0;
+  }
 }
 
 const theSum = sum(1, 3);
